@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "HN Tab",
+  "description": "This extension enables easy tab navigation between links on Hacker News.",
+  "version": "1.0",
+  "icons": {
+    "48": "hntab_48x48.png",
+    "128": "hntab_128x128.png"
+  },
+  "content_scripts": [{ 
+      "matches": [ "https://news.ycombinator.com/*" ],
+      "js": [ "inject.js" ]
+    }]
+}
